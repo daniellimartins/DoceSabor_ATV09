@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="br-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+    <link rel="stylesheet" href="estiloCardapio.css">
+</head>
+<body>
+    <header>
+        <h1>Cardápio do Doce Sabor</h1>
+        <h2>Esperamos que vocês gostem!</h2>
+    </header>
+    <main>
+    
+        <h2>Confira nosso cardápio:</h2>
+        <article>
+            <p>Oferecemos os melhores e mais variados bolos da cidade, aproveite.</p>
+        </article>
+    <section>
+    <table border="1">
+        <tr>
+            <th>Sabor do bolo</th>
+            <th>Descrição</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <td>Chocolate</td>
+            <td>Delicioso bolo de chocolate com recheio de brigadeiro e cobertura de castanhas</td>
+            <td>R$ 35,00</td>
+        </tr>
+        <tr>
+            <td>Cenoura</td>
+            <td>Delicioso bolo de cenoura com recheio de cream cheese e cobertura de nozes</td>
+            <td>R$ 30,00</td>
+        </tr>
+        <tr>
+            <td>Morango</td>
+            <td>Delicioso bolo de morango com recheio de creme de morango e cobertura de chantilly</td>
+            <td>R$ 30,00</td>
+        </tr>
+        <tr>
+            <td>Limão</td>
+            <td>Delicioso bolo de limão com recheio de creme de limão e cobertura de creme</td>
+            <td>R$ 25,00</td>
+        </tr>
+        <tr>
+            <td>Red Velvet</td>
+            <td>Delicioso bolo de red velvet com recheio de cream cheese e cobertura de creme</td>
+            <td>R$ 40,00</td>
+        </tr>
+    </table>
+    </section>
+    <br>
+
+    <section>
+        <h2>Faça sua encomenda:</h2>
+        <p>Preencha o formulário abaixo para faxer oo pedido.</p>
+    <label for="sabor">Sabor do bolo:</label>
+    <select id="sabor" name="sabor" required>
+        <option value="">Selecione um sabor</option>
+        <option value="Chocolate">Chocolate</option>
+        <option value="Cenoura">Cenoura</option>
+        <option value="Morango">Morango</option>
+        <option value="Limão">Limão</option>
+        <option value="Red Velvet">Red Velvet</option>
+    </select>
+    </section>
+    <br><br>
+
+    <Section>
+        <h2>Informações do cliente:</h2>
+    <label for="retirada">Data de retirada:</label>
+    <input type="date" id="retirada" name="retirada">
+    <input type="radio" id="loja" name="recebimento" value="loja">
+
+    <label for="loja">Retirar na loja:</label>
+    <input type="radio" id="entrega" name="recebimento" value="entrega">
+    <label for="entrega">Solicitar entrega:</label>
+    <textarea name="observações" id="obs"></textarea>
+    </section>
+
+    <br><br>
+
+    <section>
+        <h2>Informações de contato:</h2>
+    <form action="/encomendas" method="post">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">Enviar Encomenda</button>
+    </form>
+    </section>
+
+    <div>
+        <input type="checkbox" id="promo" name="promo">
+        <label for="promo">Quero receber promoções!</label>
+    </div>
+
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpar</button>
+
+    <footer>
+        <p>Direitos e Contato</p>
+        <p>&copy; 2026 Doce Sabor</p>
+        <address>
+            <a href="doce_sabor.html">Página Inicial</a>
+            <a href="mailto:https://mail.google.com/mail/u/1/#inbox?compose=CllgCJTNqVjHpHlrXBVRpgwVMTkMGzppKvvQvXrbCTvdVqjlbBqjcQmsNrFjPvjbxqwHsVgjdtg">Contato</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+            <a href="tel:+551112345678">(11) 1234-5678</a>
+        </address>
+    </footer>
+    </main>
+</html>
